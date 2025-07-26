@@ -1,0 +1,13 @@
+/* Larger screen enhancements */
+nav {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gallery {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#menuBtn {
+  display: none;
+}
