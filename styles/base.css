@@ -1,0 +1,159 @@
+/* Root variables for colors and typography */
+:root {
+    --primary-color: #4E6EA2;
+    --secondary-color: #074E9B;
+    --accent1-color: #23255F;
+    --accent2-color: #9CA2BE;
+    --heading-font: "Ubuntu", sans-serif;
+    --body-font: "Nunito", sans-serif;
+}
+
+/* General reset for margins and padding */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply default fonts and background color */
+body {
+    font-family: var(--body-font), sans-serif;
+    background-color: #F4F6F9; /* Light background for readability */
+    color: var(--accent1-color); /* Dark color for text */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Global link styles */
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover,
+a:focus {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#course-title {
+    display: block;
+    font-family: var(--heading-font), sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+/* Navigation styling using Flexbox */
+nav {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between nav links */
+    margin-top: 20px;
+}
+
+nav a {
+    font-family: var(--heading-font), sans-serif;
+    font-size: 1.1rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    color: #fff; /* White text when hovered */
+}
+
+/* Main content styling */
+main {
+    width: 90%;
+    max-width: 1200px; /* Limit the width */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px;
+}
+
+h1 {
+    font-family: var(--heading-font), sans-serif;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* About Me card styling */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.card img {
+    border-radius: 50%; /* Circular profile image */
+    border: 4px solid var(--secondary-color);
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--accent1-color);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer p a:hover {
+    color: var(--secondary-color);
+}
+
+/* Responsive Design - Adjustments for smaller screen sizes */
+@media screen and (max-width: 768px) {
+    /* Stack navigation links vertically */
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        grid-template-columns: 1fr; /* Ensure cards stack on smaller screens */
+    }
+}
