@@ -1,0 +1,10 @@
+            <ul>
+                <li><strong>Area:</strong> 587,041 sq km</li>
+                <li><strong>Population:</strong> 27,691,018</li>
+                <li><strong>Capital:</strong> Antananarivo</li>
+                <li><strong>Languages:</strong> Malagasy, French</li>
+                <li><strong>Currency:</strong> Malagasy Ariary</li>
+                <li><strong>Time Zone:</strong> UTC+3</li>
+                <li><strong>Calling Code:</strong> +261</li>
+                <li><strong>Internet TLD:</strong> .mg</li>
+            </ul>

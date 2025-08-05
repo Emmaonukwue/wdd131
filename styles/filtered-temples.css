@@ -1,0 +1,112 @@
+/* === Google Fonts === */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display&display=swap');
+
+:root {
+    --primary-color: #003366;
+    --secondary-color: #e0f0ff;
+    --accent-color: #f4c542;
+    --text-color: #111;
+    --white: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+#menuBtn {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    color: var(--white);
+    border: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+nav {
+    background-color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+nav.hide {
+    display: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}

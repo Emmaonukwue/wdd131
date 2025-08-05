@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff;
+}
+
+header {
+    background: #c8102e;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+    background: url('lemur-bg.jpg') no-repeat center/cover;
+    height: 90vh;
+}
+
+#data, #weather {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background: #c8102e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

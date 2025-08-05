@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+header {
+    background: #c8102e;
+    color: white;
+    padding: 1rem;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin: 1.5rem 0;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.weather-info img {
+    width: 50px;
+}
+
+footer {
+    background: #c8102e;
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.table-section {
+    display: flex;
+    justify-content: center; /* Horizontally centers the table */
+    align-items: center;      /* Vertically centers if section has height */
+    text-align: left;         /* Ensures table text stays left-aligned */
+    min-height: 200px;        /* Optional: give space to see vertical centering */
+}
+
+.table-section table {
+    border-collapse: collapse;
+    padding: 0px;
+}
+
+.table-section td {
+    padding: 8px 12px;
+    border: 1px solid #ccc; /* Optional styling */
+}
