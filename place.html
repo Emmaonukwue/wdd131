@@ -21,7 +21,14 @@
     <main>
         <!-- Hero Image -->
         <section id="hero">
-            <img src="images/hero.jpg" alt="Hero image">
+            <picture>
+                <!-- Mobile (small screen) image -->
+                <source media="(max-width: 768px)" srcset="images/hero-small.webp">
+                <!-- Tablet (medium screen) image -->
+                <source media="(max-width: 1200px)" srcset="images/hero-medium.webp">
+                <!-- Default (large screen) image -->
+                <img src="images/hero.webp" alt="Nigeria Landscape showing Lagos skyline" width="100%" height="auto">
+            </picture>
 
             <!-- Data Card (Widescreen Position) -->
             <!-- Data Card -->
