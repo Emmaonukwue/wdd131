@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -62,3 +63,140 @@ footer {
     padding: 8px 12px;
     border: 1px solid #ccc; /* Optional styling */
 }
+=======
+/* ===== Global Styles ===== */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #e0f0ff;
+    --accent-color: #f4c542;
+    --text-color: #111;
+    --white: #fff;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    max-width: 100%;
+}
+
+header {
+    background: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    background: var(--text-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 4px 6px;
+}
+
+/* ===== Hero Section ===== */
+#hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero img {
+    width: 100vw;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* ===== Info Card Styling ===== */
+.info-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
+    border-radius: 8px;
+    width: clamp(220px, 90%, 260px);
+    margin: 1rem auto;
+}
+
+.info-card h2 {
+    background: #1c7947;
+    color: white;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 0.5rem;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-size: 1.1rem;
+}
+
+.weather-card h2 img {
+    max-width: 18px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* ===== Mobile (Default) ===== */
+@media (max-width: 768px) {
+    #hero img {
+        height: auto;
+    }
+
+    .info-card {
+        position: static;
+        width: 90%;
+        text-align: left;
+    }
+
+    .weather-card h2 img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* ===== Widescreen (Desktop) ===== */
+@media (min-width: 769px) {
+    #hero {
+        height: 90vh;
+    }
+
+    #hero img {
+        height: 100%;
+    }
+
+    .info-card {
+        position: absolute;
+        width: clamp(220px, 25%, 260px);
+    }
+
+    .data-card {
+        top: 20%;
+        left: 3%;
+    }
+
+    .weather-card {
+        top: 20%;
+        right: 3%;
+    }
+}
+>>>>>>> 25cda83b1aef1f0a964bf3d1ba63b419224a9fa1

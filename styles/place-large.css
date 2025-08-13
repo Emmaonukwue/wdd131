@@ -1,12 +1,18 @@
 body {
+<<<<<<< HEAD
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #fff;
+=======
+    margin: 0;
+    font-family: Arial, sans-serif;
+>>>>>>> 25cda83b1aef1f0a964bf3d1ba63b419224a9fa1
 }
 
 header {
     background: #c8102e;
     color: white;
+<<<<<<< HEAD
     padding: 1rem;
     text-align: center;
 }
@@ -30,6 +36,54 @@ main {
 ul {
     list-style: none;
     padding: 0;
+=======
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    position: relative;
+}
+
+#hero {
+    position: relative;
+    height: 90vh;
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-card {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 6px;
+    width: 260px;
+}
+
+.data-card {
+    top: 20%;
+    left: 5%;
+}
+
+.weather-card {
+    top: 20%;
+    right: 5%;
+}
+
+.info-card h2 {
+    background: #1c7947;
+    color: white;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 0.5rem;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+>>>>>>> 25cda83b1aef1f0a964bf3d1ba63b419224a9fa1
 }
 
 footer {
@@ -37,4 +91,8 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 25cda83b1aef1f0a964bf3d1ba63b419224a9fa1

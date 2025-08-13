@@ -1,48 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madagascar</title>
-    <link rel="stylesheet" href="styles/place.css" media="(max-width: 768px)">
-    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 769px)">
-    <script src="styles/place.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Emmanuel Onukwue">
+    <meta name="description" content="Place page featuring Nigerian data and weather conditions.">
+    <title>Place Page - Nigeria</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
     <header>
-        <h1>Madagascar</h1>
+        <h1>Nigeria</h1>
     </header>
 
     <main>
+        <!-- Hero Image -->
         <section id="hero">
-            <img src="images/lemur-hero.jpg" alt="Lemur">
-        </section>
+            <picture>
+                <!-- Mobile (small screen) image -->
+                <source media="(max-width: 768px)" srcset="images/hero-small.webp">
+                <!-- Tablet (medium screen) image -->
+                <source media="(max-width: 1200px)" srcset="images/hero-medium.webp">
+                <!-- Default (large screen) image -->
+                <img src="images/hero.webp" alt="Nigeria Landscape showing Lagos skyline">
+            </picture>
 
-        <section id="data">
-            <h2>Data</h2>
-            <table class="table-section">
-                    <tr><td>Area:</td><td>58799999</td></tr>
-                    <tr><td>Area:</td><td>58799999</td></tr>
-                
-            </table>
+            <!-- Data Card (Widescreen Position) -->
+            <!-- Data Card -->
+            <div class="info-card data-card">
+                <h2>Data</h2>
+                <table>
+                    <tr>
+                        <td><strong>Area:</strong></td>
+                        <td>923,769 sq km</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Population:</strong></td>
+                        <td>223,804,632</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Capital:</strong></td>
+                        <td>Abuja</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Languages:</strong></td>
+                        <td>English, Hausa, Yoruba, Igbo, others</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Currency:</strong></td>
+                        <td>Nigerian Naira (₦)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Time Zone:</strong></td>
+                        <td>UTC+1 (West Africa Time)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Calling Code:</strong></td>
+                        <td>+234</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Internet TLD:</strong></td>
+                        <td>.ng</td>
+                    </tr>
+                </table>
+            </div>
 
-        </section>
-
-        <section id="weather">
-            <h2>Weather</h2>
-            <div class="weather-info">
-                <img src="weather-icon.png" alt="Weather Icon">
-                <p><strong>Temperature:</strong> 10°C</p>
-                <p><strong>Conditions:</strong> Partly Cloudy</p>
-                <p><strong>Wind:</strong> 5.8 km/h</p>
-                <p><strong>Wind Chill:</strong> 9.8°C</p>
+            <!-- Weather Card (Widescreen Position) -->
+            <div class="info-card weather-card">
+                <h2>Weather <img src="images/cloudy.svg" alt="Weather Icon"></h2>
+                <p><strong>Temperature:</strong> 27°C</p>
+                <p><strong>Conditions:</strong> Hot & humid</p>
+                <p><strong>Humidity:</strong> 88%</p>
+                <p><strong>Wind:</strong> 14 km/h </p>
+                <p><strong>Wind Chill:</strong> 27°C</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy;2024 🌺 Rubia Magdelena Francesco 🌺 Madagascar</p>
-        <p id="last-modified"></p>
+        <p>&copy; <span id="year"></span> 💕 Emmanuel Onukwue 💕 Lagos, Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
+
 </html>
