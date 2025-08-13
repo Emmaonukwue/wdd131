@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Emmanuel Onukwue">
+  <meta name="description"
+          content="A filtered version of my Temple Album project.">
+
+
+  <title>Filtered Temple Album</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)" />
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menuBtn" aria-label="Menu">&#9776;</button>
+    <nav id="navMenu" class="hide">
+      <a href="#" class="active">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Filtered Temple Home Page</h1>
+    <section class="gallery" id="temples">
+      <!-- JavaScript will dynamically inject temple cards here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> 💕 Emmanuel Onukwue 💕 Lagos, Nigeria</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+
+</html>
