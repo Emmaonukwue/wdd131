@@ -1,109 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Contact M-design — send a message about your project." />
-  <title>M-design • Contact</title>
-  <link rel="stylesheet" href="styles/project.css" />
-  <script src="scripts/main.js" defer></script>
-  <link rel="icon" href="images/m-design-logo.png" type="image/png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Emmanuel Onukwue">
+    <meta name="description" content="M-design — Contact us page." />
+    <title>M-design | Contact us</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/project.css" />
+    <script src="scripts/project.js" defer></script>
+    <link rel="icon" href="images/m-design-logo.png" type="image/png">
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="brand">
-      <a class="logo-link" href="index.html">
-        <img
-          src="images/m-design-logo.png"
-          srcset="images/m-design-logo.png 1x, images/m-design-logo@2x.png 2x"
-          alt="M-design company logo" width="160" height="50" loading="eager" decoding="async" />
-      </a>
-      <span class="brand-name">M-design</span>
-    </div>
+    <header class="site-header">
+        <div class="brand">
+            <a class="logo-link" href="index.html">
+                <img src="images/m-design-logo.png" srcset="images/m-design-logo.png 1x, images/m-design-logo@2x.png 2x"
+                    alt="M-design company logo" width="160" height="50" loading="eager" decoding="async" />
+            </a>
+            <span class="brand-name">M-design</span>
+        </div>
 
-    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-      ☰
-    </button>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+            ☰
+        </button>
 
-    <nav id="site-nav" class="site-nav" aria-label="Primary">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a class="active" href="contact.html">Contact</a></li>
-        <li class="theme-wrap">
-          <button id="theme-toggle" class="btn btn-ghost">Toggle theme</button>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="main">
-    <header class="page-head">
-      <h1>Contact</h1>
-      <p>Share a few details and I’ll reply promptly.</p>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li class="theme-wrap">
+                    <button id="theme-toggle" class="btn btn-ghost">Toggle theme</button>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <form id="contactForm" class="card form" novalidate>
-      <div class="field">
-        <label for="name">Full name</label>
-        <input id="name" name="name" type="text" required minlength="2" autocomplete="name" />
-        <small class="error" id="nameError" aria-live="polite"></small>
-      </div>
+    <main id="main">
+        <header class="page-head">
+            <h1>Contact</h1>
+            <p>Share a few details and I’ll reply promptly.</p>
+        </header>
 
-      <div class="field">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required inputmode="email" autocomplete="email" />
-        <small class="error" id="emailError" aria-live="polite"></small>
-      </div>
+        <form id="contactForm" class="card form" novalidate>
+            <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" required minlength="2" autocomplete="name" />
+                <small class="error" id="nameError" aria-live="polite"></small>
+            </div>
 
-      <div class="field">
-        <label for="service">Service</label>
-        <select id="service" name="service" required>
-          <option value="">Select a service…</option>
-          <option value="Website">Website</option>
-          <option value="Web App">Web App</option>
-          <option value="Consultation">Consultation</option>
-        </select>
-        <small class="error" id="serviceError" aria-live="polite"></small>
-      </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required inputmode="email" autocomplete="email" />
+                <small class="error" id="emailError" aria-live="polite"></small>
+            </div>
 
-      <div class="field">
-        <label for="budget">Budget (USD)</label>
-        <input id="budget" name="budget" type="number" min="0" step="100" placeholder="e.g., 1000" />
-        <small class="hint">Optional</small>
-      </div>
+            <div class="field">
+                <label for="service">Service</label>
+                <select id="service" name="service" required>
+                    <option value="">Select a service…</option>
+                    <option value="Website">Website</option>
+                    <option value="Web App">Web App</option>
+                    <option value="Consultation">Consultation</option>
+                </select>
+                <small class="error" id="serviceError" aria-live="polite"></small>
+            </div>
 
-      <div class="field">
-        <label for="message">Project details</label>
-        <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
-        <small class="error" id="messageError" aria-live="polite"></small>
-      </div>
+            <div class="field">
+                <label for="budget">Budget (USD)</label>
+                <input id="budget" name="budget" type="number" min="0" step="100" placeholder="e.g., 1000" />
+                <small class="hint">Optional</small>
+            </div>
 
-      <div class="actions">
-        <button type="submit" class="btn btn-primary">Send message</button>
-        <button type="reset" class="btn btn-ghost">Reset</button>
-      </div>
+            <div class="field">
+                <label for="message">Project details</label>
+                <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+                <small class="error" id="messageError" aria-live="polite"></small>
+            </div>
 
-      <p id="formStatus" class="status" role="status" aria-live="polite"></p>
-    </form>
+            <div class="actions">
+                <button type="submit" class="btn btn-primary">Send message</button>
+                <button type="reset" class="btn btn-ghost">Reset</button>
+            </div>
 
-    <section class="card">
-      <h2>Why M-design?</h2>
-      <ul class="checklist">
-        <li>Responsive, accessible UI</li>
-        <li>Clean, maintainable code</li>
-        <li>Clear communication and timelines</li>
-      </ul>
-    </section>
-  </main>
+            <p id="formStatus" class="status" role="status" aria-live="polite"></p>
+        </form>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> M-design</p>
-    <p><a href="references.html">References & Attributions</a></p>
-  </footer>
+        <section class="card">
+            <h2>Why M-design?</h2>
+            <ul class="checklist">
+                <li>Responsive, accessible UI</li>
+                <li>Clean, maintainable code</li>
+                <li>Clear communication and timelines</li>
+            </ul>
+        </section>
+    </main>
 
-  <script src="scripts/main.js" defer></script>
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> M-design by Emmanuel Onukwue, Lagos, Nigeria</p>
+    </footer>
 </body>
+
 </html>

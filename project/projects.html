@@ -1,86 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="M-design project gallery with filtering, favorites, and details." />
-  <title>M-design • Projects</title>
-  <link rel="stylesheet" href="styles/project.css" />
-  <script src="scripts/main.js" defer></script>
-  <link rel="icon" href="images/m-design-logo.png" type="image/png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Emmanuel Onukwue">
+    <meta name="description" content="M-design — Software development projects display." />
+    <title>M-design | Projects</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/project.css" />
+    <script src="scripts/project.js" defer></script>
+    <link rel="icon" href="images/m-design-logo.png" type="image/png">
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="brand">
-      <a class="logo-link" href="index.html">
-        <img
-          src="images/m-design-logo.png"
-          srcset="images/m-design-logo.png 1x, images/m-design-logo@2x.png 2x"
-          alt="M-design company logo" width="160" height="50" loading="eager" decoding="async" />
-      </a>
-      <span class="brand-name">M-design</span>
-    </div>
+    <header class="site-header">
+        <div class="brand">
+            <a class="logo-link" href="index.html">
+                <img src="images/m-design-logo.png" srcset="images/m-design-logo.png 1x, images/m-design-logo@2x.png 2x"
+                    alt="M-design company logo" width="160" height="50" loading="eager" decoding="async" />
+            </a>
+            <span class="brand-name">M-design</span>
+        </div>
 
-    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-      ☰
-    </button>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+            ☰
+        </button>
 
-    <nav id="site-nav" class="site-nav" aria-label="Primary">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="theme-wrap">
-          <button id="theme-toggle" class="btn btn-ghost">Toggle theme</button>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="main" class="projects-page">
-    <header class="page-head">
-      <h1>Projects</h1>
-      <p>Filter by stack, search by title, and star your favorites (saved on this device).</p>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="theme-wrap">
+                    <button id="theme-toggle" class="btn btn-ghost">Toggle theme</button>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <form id="filters" class="filters" role="search" aria-label="Project filters">
-      <label>
-        <span class="sr-only">Search projects</span>
-        <input id="search" type="search" placeholder="Search projects…" autocomplete="off" />
-      </label>
+    <main id="main" class="projects-page">
+        <header class="page-head">
+            <h1>Projects</h1>
+            <p>Filter by stack, search by title, and star your favorites (saved on this device).</p>
+        </header>
 
-      <label>
-        <span>Tech</span>
-        <select id="tech">
-          <option value="all">All</option>
-          <option value="HTML/CSS/JS">HTML/CSS/JS</option>
-          <option value="Python">Python</option>
-          <option value="C#">C#</option>
-          <option value="Laravel/PHP">Laravel/PHP</option>
-        </select>
-      </label>
+        <form id="filters" class="filters" role="search" aria-label="Project filters">
+            <label>
+                <span class="sr-only">Search projects</span>
+                <input id="search" type="search" placeholder="Search projects…" autocomplete="off" />
+            </label>
 
-      <label class="checkbox">
-        <input id="favoritesOnly" type="checkbox" />
-        <span>Favorites only</span>
-      </label>
-    </form>
+            <label>
+                <span>Tech</span>
+                <select id="tech">
+                    <option value="all">All</option>
+                    <option value="HTML/CSS/JS">HTML/CSS/JS</option>
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                    <option value="Laravel/PHP">Laravel/PHP</option>
+                </select>
+            </label>
 
-    <section aria-live="polite" aria-busy="false">
-      <div id="project-grid" class="grid cards">
-        <!-- JS injects all project cards here using template literals -->
-      </div>
-      <p id="emptyState" class="muted center hidden">No projects match your filters.</p>
-    </section>
-  </main>
+            <label class="checkbox">
+                <input id="favoritesOnly" type="checkbox" />
+                <span>Favorites only</span>
+            </label>
+        </form>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> M-design</p>
-    <p><a href="references.html">References & Attributions</a></p>
-  </footer>
+        <section aria-live="polite" aria-busy="false">
+            <div id="project-grid" class="grid cards">
+                <!-- JS injects all project cards here using template literals -->
+            </div>
+            <p id="emptyState" class="muted center hidden">No projects match your filters.</p>
+        </section>
+    </main>
 
-  <script src="scripts/main.js" defer></script>
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> M-design by Emmanuel Onukwue, Lagos, Nigeria</p>
+    </footer>
 </body>
+
 </html>
