@@ -99,7 +99,7 @@ const projects = [
         thumb: 'images/temples.webp'   // image for temples project
     },
     {
-        id: 'Bygmart_web',
+        id: 'Bygmart-web',
         title: 'eClassify Multi Shop',
         stack: 'Laravel/PHP/Flutter',
         year: 2025,
@@ -121,7 +121,7 @@ const projects = [
         thumb: 'images/ordering-online-execution.webp'
     },
     {
-        id: 'Blaqloaded_news',
+        id: 'Blaqloaded-news',
         title: 'Online News Platform',
         stack: 'WordPress/PHP',
         year: 2025,
