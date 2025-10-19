@@ -99,6 +99,17 @@ const projects = [
         thumb: 'images/temples.webp'   // image for temples project
     },
     {
+        id: 'Bygmart_web',
+        title: 'eClassify Multi Shop',
+        stack: 'Laravel/PHP/Flutter',
+        year: 2025,
+        description: 'Custom admin UI with role-aware dashboard, and MySQL backend.',
+        repo: 'https://bygmart.com/',
+        live: 'https://bygmart.com',
+        imageAlt: 'eClassify Ecommerce Portal',
+        thumb: 'images/bygmart.jpg'
+    },
+    {
         id: 'word-raider',
         title: 'Ordering Online App',
         stack: 'C#',
@@ -108,6 +119,17 @@ const projects = [
         live: '#',
         imageAlt: 'Console word game screen',
         thumb: 'images/ordering-online-execution.webp'
+    },
+    {
+        id: 'Blaqloaded_news',
+        title: 'Online News Platform',
+        stack: 'WordPress/PHP',
+        year: 2025,
+        description: 'Custom admin UI with role-aware dashboard, and MySQL backend.',
+        repo: 'http://blaqloaded.com/',
+        live: 'http://blaqloaded.com/',
+        imageAlt: 'Blaqloaded News Platform',
+        thumb: 'images/blaqloaded.jpg'
     },
     {
         id: 'scripture-memorizer',
@@ -122,7 +144,7 @@ const projects = [
     },
     {
         id: 'mdesign-admin',
-        title: 'M-design Admin Portal',
+        title: 'School Report Portal',
         stack: 'Laravel/PHP',
         year: 2025,
         description: 'Custom admin UI with role-aware dashboard, and MySQL backend.',
